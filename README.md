@@ -14,3 +14,9 @@ We certainly could get a good ballpark of how much it costs per month and just e
 
 Now, we might also be asking questions about what it might cost to move to an entirely different city, and what would be the cost differential there? All of these questions are exactly the kinds of questions that we're going to answer in this next section, as we talk about pricing and support. And spoiler alert, AWS provides a lot of free tools to help you plan and analyze your budgets for your AWS environments. Let's dive on in.
 
+### AWS Free Tier
+
+#### Transcript
+
+
+
