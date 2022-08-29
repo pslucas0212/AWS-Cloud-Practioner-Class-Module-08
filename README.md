@@ -44,9 +44,14 @@ Use the AWS pricing calculaor to estimate cost for your use cases
 
 ### Billing dashboard
 
-#### Transcript
-–
+AWS Billing & Cost Management Dasbhoard
+You can see current montly spend
+Last month spend
+Top 3 service spends
 
+Click bills to specifically region usage as well as global services
+
+#### Transcript
 Hey there, AWS aficionados. Are you like me and curious about billing information of your AWS account? Well, let's walk through a demo so you know where to go. 
 
 
@@ -56,4 +61,18 @@ As you can see, I'm already logged in and now we're gonna search for billing and
 If we scroll up, you can see you have access to other billing tools, such as Cost Explorer, Budgets, along with a few others. You also get access to your bill itself. So let's click Bills. Now, you can see we have the services that we are paying for, and if we expand them, we get to see the costs broken down by region. And for global services, we see them broken down as such. For example, if I click Route 53, you can see it's a global service and is broken down that way. 
 
 And there you have it, a simple way to check out what you're spending on each service in AWS. Thanks for joining us.
+
+### Consolidated Billing
+
+#### Transcript
+When you own multiple coffee shops around the city, like we talked about before, each one will have its own expenditures and its own profits. At the end of the day for these coffee shops, they're all owned by the same entity. Because of that, the money is flowing to and from one main account, if there was a coffee machine repair person on call to help fix the coffee machines when they break, that repair person will bill the organization, not the individual coffee shop. 
+
+
+Okay, let's take that idea and apply it to AWS. A singular company will more than likely have multiple AWS accounts, and as you already learned, you can manage multiple accounts in AWS by using AWS Organizations. One of the lovely features of AWS Organizations is called consolidated billing. At the end of every month, instead of having to pay an AWS bill for every single account, you can roll those bills up into one bill owned by the owner of the organization. This makes it easier to keep track of your bills. You don't get 100 bills, if you have 100 AWS accounts, just like our coffee shop example, if my repair person visited 11 of my coffee shops, repairing coffee makers, they would just make one bill for the billing cycle. So it's easier for the company to manage. 
+
+
+Same idea with the consolidated billing feature for AWS Organizations. You can still view your AWS bill in an itemized fashion. So you know which accounts spent what, but it all goes into one central location for ease of viewing. There are other benefits of using this feature too. One of them is that the usage for AWS resources is rolled up to the organization level. AWS does offer bulk pricing. Each individual account may only have a small amount of usage, but you can get the bulk discount pricing because of the aggregate across all accounts in the organization. 
+
+In addition, if you have a savings plan in place, or if you are using reserved instances for EC2, it can be shared across AWS accounts in the organization. The best part about this is that the feature is free and easy to use. So it simplifies the billing process, lets you share savings across accounts and doesn't cost you any extra money. Nice.
+
 
