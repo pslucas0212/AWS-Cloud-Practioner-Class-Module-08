@@ -64,6 +64,11 @@ And there you have it, a simple way to check out what you're spending on each se
 
 ### Consolidated Billing
 
+Manage multple AWS accounts - consolidated billing roles up all AWS accounts to one payment
+Usage is rolled up to the organization that helps the organization to get bulk discount.  And you can share reserved instances across the organization...
+
+Default number of AWS accounts per organization is 4, but you can request more.
+
 #### Transcript
 When you own multiple coffee shops around the city, like we talked about before, each one will have its own expenditures and its own profits. At the end of the day for these coffee shops, they're all owned by the same entity. Because of that, the money is flowing to and from one main account, if there was a coffee machine repair person on call to help fix the coffee machines when they break, that repair person will bill the organization, not the individual coffee shop. 
 
@@ -75,4 +80,43 @@ Same idea with the consolidated billing feature for AWS Organizations. You can s
 
 In addition, if you have a savings plan in place, or if you are using reserved instances for EC2, it can be shared across AWS accounts in the organization. The best part about this is that the feature is free and easy to use. So it simplifies the billing process, lets you share savings across accounts and doesn't cost you any extra money. Nice.
 
+### AWS Budgets
 
+Want to track costs to stay within a defined budget.  Set customes budgets for costs and usages.  Receive alerts when you are forecasted to meet or exceed budget amounts
+
+AWS Budgets are update 3 times per day. 
+#### Transcripts
+As you're ramping up your AWS deployments, you probably want to make sure you're not spending an unbudgeted amount. As with most companies, you want to track costs and make sure you keep within your limits. Introducing AWS Budgets. 
+
+
+Think of a budget for your personal expenses, and you'll be most familiar with AWS Budgets. It allows you to set custom budgets for a variety of scenarios like cost and usage. You will then receive an alert when your costs or usage exceed or are forecasted to exceed your budgeted amount. 
+
+
+Say my budget was a thousand dollars and I want to be notified when I reach 80% of that amount. Well, with Budgets, you can do just that. That means you can be proactively notified if you're going to exceed your budgeted amount for resources. 
+
+
+So let me show you what I'm talking about here with a demo. To get started, you navigate to the billing section of your AWS console, click Budgets, then click Create Budget. Choose a type for your budget. I'll pick Cost. Give your budget a name. Enter an amount. Let's say a thousand dollars as I mentioned earlier, and then click Configure Alert. Next, we set an alert threshold. Let's take that 80%, which means we'll get an alert if we've reached 80% of our budgeted amount. Now let's add an email address. Gotta make sure to blur this out, folks. I get enough spam as it is. Now we click Confirm Budget and Create. 
+
+
+And voila, we have our first budget. How streamlined was that? I think it's safe to say we budgeted our time wisely in that demo.
+
+
+### AWS Cost Explorer
+
+
+#### Transcript
+As we have already discussed, AWS has a variable cost model, and you only pay for what you use. You don't have one fixed billed amount at the end of every month. Instead, it fluctuates with the resources you use and how you use them. Because of this cost model, it's really important that you can drill down into your bill and see just how you are spending money. 
+
+AWS has a service called the AWS Cost Explorer, and it's a console-based service that allows you to visually see and analyze how you are spending money with AWS. It will show you which services you are spending the most money on, and it gives you 12 months of historical data, so you can track your spending over time. That way, if you see a bump in spending on, say, EC2 from October to December, you can then use that data to go on and figure out why exactly that happened. 
+
+
+Let's take a look at AWS Cost Explorer in my own AWS account. You can see I am logged in to the console, and I'm going to type into the search Cost Explorer. From here, I am brought to the Cost Management dashboard, and I will click on Cost Explorer. You can see this is showing me the last six months of cost associated with my account, and it's currently grouped by service. I can change the timeframe it's showing me to eight months and change the data to be grouped by different attributes, and I'll go ahead and select Region. I can group by other attributes as well. 
+
+
+One important grouping to note is to group by tag. Many resources in AWS are taggable. Tags are essentially user-defined key-value pairs. So you can tag an EC2 instance with a specific project name or a database with the same project name, and then you can come into the AWS Cost Explorer, filter by tag, and see all of the expenses associated with that tag. Cost Explorer also allows you to create custom reports. 
+
+
+So now what I'm going to do is create a report on the daily cost for the month of January of this year. I'm going to group by service. You can see that the cost of the services is generally the same every day, except that I used more EC2 on some days than others. I can then save this report and come back to it when it is needed. 
+
+
+So as you can see, Cost Explorer gives you some powerful defaults for reports, but you can build your own custom ones as well. This will help you identify cost drivers and take action when necessary to curb spending. Cost optimization is a priority you should be paying close attention to, and you can use the Cost Explorer to help get you going in the right direction.
