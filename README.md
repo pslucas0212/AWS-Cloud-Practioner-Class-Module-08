@@ -104,6 +104,7 @@ And voila, we have our first budget. How streamlined was that? I think it's safe
 ### AWS Cost Explorer
 
 
+
 #### Transcript
 As we have already discussed, AWS has a variable cost model, and you only pay for what you use. You don't have one fixed billed amount at the end of every month. Instead, it fluctuates with the resources you use and how you use them. Because of this cost model, it's really important that you can drill down into your bill and see just how you are spending money. 
 
