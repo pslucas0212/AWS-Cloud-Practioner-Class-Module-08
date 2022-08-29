@@ -17,9 +17,11 @@ Now, we might also be asking questions about what it might cost to move to an en
 ### AWS Free Tier
 
 Three types of offers:
-- Always Free.  Lambda allows 1 million free invocations per month.  
+- Always Free.  Lambda allows 1 million free invocations per month as of March 2020.  Free tier does not expire.
 - 12 months to try out a service.  S3 free for 12 months with 5GB
-- Trials - Some services offer a short term trial... AWS Lightsail 1 month trial up to 750 hours o usage
+- Trials - Some services offer a short term trial... AWS Lightsail deploy ready made application stacks.  1 month trial up to 750 hours o usage
+
+Sagemaker, dynamoDB, etc.   Approximately 60 services make up the free tier.
 
 #### Transcript
 So you've created a brand spanking new AWS account and want to get started, but you're worried about exhausting your credit limit. Well, don't worry. If you're looking to try out some AWS services, you might be able to try them out under our Free Tier. 
@@ -33,5 +35,25 @@ Simple enough, right? Let's illustrate with a few examples. Let's take AWS Lambd
 
 But before I digress, some other services that qualify under the free tier are SageMaker, Comprehend Medical, DynamoDB, SNS, Cognito, and so much more. If you want to see the full list of 60 or so services, please check out our Resources section. Happy exploring of the Free Tier.
 
+### How AWS Pricing Works
+- Pay for what you used
+- Pay less when you reserve
+- Pay less with volume-based disounts when you use more
 
+Use the AWS pricing calculaor to estimate cost for your use cases
+
+### Billing dashboard
+
+#### Transcript
+–
+
+Hey there, AWS aficionados. Are you like me and curious about billing information of your AWS account? Well, let's walk through a demo so you know where to go. 
+
+
+As you can see, I'm already logged in and now we're gonna search for billing and click the option that shows up. And boom, with that, you already have some useful information. You can see your month-to-date spend on the right-hand side with the top services being used. Below on the left is the last month, current and forecasted amounts. Below that is the top Free Tier services by usage. You even get the percentages of your month-to-date usage. Nifty, right? 
+
+
+If we scroll up, you can see you have access to other billing tools, such as Cost Explorer, Budgets, along with a few others. You also get access to your bill itself. So let's click Bills. Now, you can see we have the services that we are paying for, and if we expand them, we get to see the costs broken down by region. And for global services, we see them broken down as such. For example, if I click Route 53, you can see it's a global service and is broken down that way. 
+
+And there you have it, a simple way to check out what you're spending on each service in AWS. Thanks for joining us.
 
